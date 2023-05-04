@@ -11,6 +11,7 @@ const diceEl = document.querySelector('.dice')
 const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
+const btnInfo = document.querySelector('.btn--info');
 
 // variables to contain values 
 let currentScore = 0;
@@ -97,4 +98,8 @@ btnNew.addEventListener('click',function(){
     playing=true;
     activePlayer=0;
 
+})
+btnInfo.addEventListener('click', function () {
+    // first check if game is running
+    document.querySelector('.information').classList.toggle('hidden');
 })
